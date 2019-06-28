@@ -17,6 +17,9 @@ if (PHP_VERSION_ID < 70300) {
     }
 
     if (!function_exists('hrtime')) {
+        if (!class_exists(p\Php73::class)) {
+            require_once('Php73.php');
+        }
         p\Php73::$startAt = (int) microtime(true);
         function hrtime($asNum = false) { return p\Php73::hrtime($asNum); }
     }
