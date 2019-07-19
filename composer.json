@@ -23,7 +23,6 @@
         "files": [ "bootstrap.php" ],
         "classmap": [ "Resources/stubs" ]
     },
-    "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
             "dev-master": "1.11-dev"
